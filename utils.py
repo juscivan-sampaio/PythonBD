@@ -24,7 +24,7 @@ def listar():
 
     if len(produtos) > 0:
         print('Listando produtos...')
-        print('------------------------')
+        print('-'*30)
         for produtos in produtos:
             print(f'ID: {produtos[0]}')
             print(f'Nome: {produtos[1]}')
@@ -88,13 +88,14 @@ def menu():
     print('=============Gerenciamento de produtos=============')
     while True:
         print('''
-    Selecione uma opção:
-    1- Listar Produtos
-    2- Inserir Produto
-    3- Atualizar Produto
-    4- Deletar Produto
-    5- Sair do sistema''')
+Selecione uma opção:
+1- Listar Produtos
+2- Inserir Produto
+3- Atualizar Produto
+4- Deletar Produto
+5- Sair do sistema''')
         op = int(input())
+        print('-'*30)
         if op == 1:
             listar()
         elif op == 2:
@@ -107,3 +108,4 @@ def menu():
             break
         else:
             print('Opção invalida!')
+        print('-'*30)
